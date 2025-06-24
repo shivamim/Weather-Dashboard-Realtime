@@ -65,38 +65,6 @@ git clone https://github.com/yourusername/weather-aqi-dashboard.git
 
 ---
 
-## 🧠 Custom DAX Measures
-
-The dashboard uses modular and reusable DAX measures to:
-
-* Dynamically color-code AQI readings
-* Provide AQI-based health recommendations
-* Categorize pollutant levels (Good, Moderate, Unhealthy, etc.)
-
-Example:
-
-```DAX
-AQI Status =
-VAR AQI = ROUND(SELECTEDVALUE('Current'[current.air_quality.pm10]), 0)
-RETURN
-SWITCH(
-    TRUE(),
-    AQI <= 50, "Good",
-    AQI <= 100, "Moderate",
-    AQI <= 150, "Unhealthy for Sensitive",
-    AQI <= 200, "Unhealthy",
-    AQI <= 300, "Very Unhealthy",
-    "Hazardous"
-)
-```
-
----
-
-## 🖼️ Screenshots
-
-> Add screenshots here (e.g., `assets/screenshot-1.png`, `screenshot-2.png`)
-
----
 
 ## 📌 Use Cases
 
