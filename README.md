@@ -1,5 +1,4 @@
 
-````markdown
 # 🌐 Real-Time Weather & Air Quality Dashboard using Power BI
 
 This repository showcases a dynamic and interactive **Weather & AQI Dashboard** built in **Power BI**, powered by **live data from WeatherAPI**. It delivers real-time weather conditions and air quality insights for any selected city, with a clean and responsive UI.
